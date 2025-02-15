@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import Signup from './Pages/Signup/Signup'
 import Login from './Pages/Login/Login'
@@ -27,7 +27,7 @@ import ResetPassword from './Pages/ResetPassword/ResetPassword'
 
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: (
